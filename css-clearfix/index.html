@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="http://www.cnblogs.com/ganiks" />
+<title>the best practice for css clearfix</title>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	padding-top: 100px;
+}
+
+div.container{
+	margin: 0 auto;
+	min-height: 50px;
+	width: 800px;
+	background: grey;
+	margin-bottom: 100px;
+}
+
+div.clearfix{
+	clear: both;
+}
+
+div.box1, div.box2{
+	float: left;
+	width: 200px;
+	max-width: 200px;
+	height: 100px;
+	background: red;
+	margin-left: 20px;
+}
+
+div.box2{
+	height: 50px;
+}
+
+.cleardiv-ba:before, .cleardiv-ba:after{
+	content: " ";
+	display: table;
+}
+.cleardiv-ba:after{
+	clear: both;
+}
+.cleardiv-ba{
+	*zoom: 1;
+}
+
+.cleardiv-simple-after:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.cleardiv-overflow{
+	overflow: hidden;
+    display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+    display: block; /* Sets element back to block */
+}
+
+.cleardiv-overflow-auto-width-100{
+	overflow: auto;
+	width: 100%;
+}
+
+.cleardiv-overflow-hidden-width-100{
+	/**
+	If Explorer Mac is still important to you, use overflow: hidden. This browser always shows scrollbars when you use overflow: auto; and I'm not sure why.
+	**/
+	overflow: hidden;
+	width: 100%;
+}
+.cleardiv-overflow-hidden-zoom-1{
+	/*
+	Rather than using the display property to set "hasLayout" for IE, other properties can be used for trigering "hasLayout" for an element.*/
+	overflow: hidden;
+    zoom: 1;  /* Triggering "hasLayout" in IE */
+    display: block; /* Element must be a block to wrap around contents. Unnecessary if only using block-level elements. */
+}
+.cleardiv-overflow-hidden-zoom-1-underscore{
+	/**
+	Another way to clear floats using the overflow property is to use the underscore hack. IE will apply the values prefixed with the underscore, other browsers will not. The zoom property triggers hasLayout in IE:
+	*/
+    overflow: hidden;
+    _overflow: visible; /* for IE */
+    _zoom: 1; /* for IE */
+}
+
+</style>
+</head>
+<body>
+<div class="container cleardiv-clearfix-div">
+	<p><a href="http://www.cnblogs.com/ganiks">author: http://www.cnblogs.com/ganiks</a></p>
+	<p>the best practice for css clearfix</p>
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	add an extra div."clearfix"
+	<br>in fact, this solution is so dirty, doesn't it ?
+	<div class="clearfix"></div>
+</div>
+<div class="container cleardiv-ba">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	add before and after
+</div>
+<div class="container cleardiv-simple-after">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	simple way add after
+</div>
+<div class="container cleardiv-overflow">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	cleardiv-overflow-hidden
+</div>
+<div class="container cleardiv-overflow-auto-width-100">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	cleardiv-overflow-auto-width-100
+	The width is necessary to trigger "hasLayout" in Explorer Windows (except for 7)
+</div>
+<div class="container cleardiv-overflow-hidden-width-100">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	cleardiv-overflow-hidden-width-100
+	The width is necessary to trigger "hasLayout" in Explorer Windows (except for 7)
+</div>
+<div class="container cleardiv-overflow-hidden-zoom-1">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	cleardiv-overflow-hidden-zoom-1
+</div>
+<div class="container cleardiv-overflow-hidden-zoom-1-underscore">
+	<div class="box1"> </div>
+	<div class="box2"> </div>
+	cleardiv-overflow-hidden-zoom-1-underscore
+</div>
+
+</body>
+</html>
