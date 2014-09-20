@@ -1,0 +1,931 @@
+body{
+    font-family: "Segoe UI","Microsoft YaHei",Arial,sans-serif;
+    background-color: #f2f2f2;
+}
+.lt{
+    float:left;
+}
+.rt{
+    float:right;
+}
+.img1{
+    height: 48px;
+    display:block;
+    float: left;
+    padding: 16px 15px 0 0;
+}
+.t1{
+    line-height: 80px;
+    color:#ffffff;
+    font-size:28px;
+    padding-right: 15px;
+    display:block;
+    float: left;
+}
+.t2{
+    line-height: 80px;
+    color:#ffffff;
+    font-size:25px;
+    display:block;
+    float: left;    
+}
+.t3{
+    line-height: 40px;
+    color:#ffffff;
+    font-size:20px;
+    display:block;
+    float: right; 
+    margin-right: 30px; 
+    margin-top: 20px;   
+}
+.t4{
+    line-height: 40px;
+    color:#ffffff;
+    font-size:20px;
+    display:block;
+    float: right; 
+    margin-right: 55px; 
+    margin-top: 20px;    
+}
+.t5{
+    color: #979797;
+    font-size:24px;
+    padding: 60px 0;
+    text-align: center;
+    background: url(http://srf.baidu.com/ios8/images/line4.png) center center no-repeat transparent;
+}
+.t6{
+    color:#434343;
+    font-size: 60px;
+    line-height: 120px;
+}
+.t7{
+    color:#898989;
+    font-size: 18px;
+    line-height: 36px;
+}
+.t8{
+    line-height: 128px;
+    font-size: 20px;
+    color:#49535f;
+    float: left;
+}
+.history-now{
+    float: right;
+    line-height: 40px;
+    display: block;
+    font-size:13px;
+    color:#2d82df;
+    padding: 0 5px;
+    margin: 44px 0;
+    background: url(http://srf.baidu.com/ios8/images/line2.png) center bottom no-repeat transparent;
+}
+.red{
+    color:#f84c4c;
+    padding-right: 5px;
+}
+.blue{
+    color:#2aa8ec;
+    padding-right: 5px;
+}
+.nav{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 80px;
+    width: 100%;
+    background:url(http://srf.baidu.com/ios8/images/bg1.png) 0 0 repeat transparent;
+    z-index: 999;
+}
+.inner{
+    width: 940px;
+    margin: 0 auto;
+}
+.inner2{
+    width: 381px;
+    margin: 0 auto;    
+}
+.share-btn{
+    padding-top: 50px;
+    position: relative;
+}
+.share-btn a{
+    display: block;
+    margin: 0 20px;
+    float: left;
+}
+.share-btn a img{
+    display: block;
+    padding:0;
+    margin: 0;
+    border:0 none;
+}
+.qrcode{
+    display: block;
+    width: 124px;
+    position: absolute;
+    top:30px;
+    left:128px;
+    border: 1px solid #898989;
+    border-radius: 8px;
+    display: none;
+}
+.text-panel{
+    width: 360px;
+}
+.animate-panel{
+    height: 570px;
+    width: 520px;
+    position: relative;
+}
+.inview{
+    
+}
+.item{
+    /*min-height: 700px;*/
+}
+.line{
+    height: 155px;
+    background: url(http://srf.baidu.com/ios8/images/line1.png) center center no-repeat transparent;
+}
+.history1{
+    width: 427px;
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+    float:left;
+    background-color: #f9f9f9;
+}
+.history1-header{
+    height: 47px;
+    background-color:#2d82df;
+    border-radius: 8px 8px 0 0;
+    position: relative; 
+}
+.history1-t1{
+    float: left;
+    display: block;
+    line-height:47px;
+    color:#ffffff;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.history1-t2{
+    float: right;
+    display: block;
+    line-height:47px;
+    color:#ffffff;
+    font-size: 16px;
+    padding-right: 20px;
+}
+.history1-header .arrow{
+    display: block;
+    height: 10px;
+    width: 10px;
+    right:-5px;
+    position: absolute;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    top:50%;
+    margin-top: -7px;
+    background-color:#2d82df;    
+}
+.history1-content{
+    padding: 20px;
+}
+.history1-content br{
+    line-height: 24px;
+}
+.history1-t3{
+    font-size:12px;
+    line-height: 24px;
+    color:#606060; 
+}
+.history1-t3 span{
+    color:#606060;
+    font-weight:bold;
+    font-size:12px;
+    line-height: 24px;
+}
+.history1-t4{
+    font-size:12px;
+    line-height: 24px;
+    color:#606060;
+    padding-left: 36px;    
+}
+.history-info{
+    padding: 0 32px;
+    float:left;
+}
+.point1{
+   height: 15px;
+   width: 15px;
+   border-radius: 7.5px;
+   background-color: #2d82df;
+   display:block;
+   margin-top: 16px; 
+}
+.point2{
+    margin-top: 70px;
+   height: 15px;
+   width: 15px;
+   border-radius: 7.5px;
+   background-color: #9d9d9d;
+   display:block;    
+}
+.history2{
+    width:425px;
+    float: right;
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 87px;
+}
+.history2-header{
+    height: 47px;
+    background-color:#f3f3f3;
+    border-radius: 8px 8px 0 0;
+    position: relative; 
+}
+.history2-t1{
+    float: left;
+    display: block;
+    line-height:47px;
+    color:#606060;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.history2-t2{
+    float: right;
+    display: block;
+    line-height:47px;
+    color:#606060;
+    font-size: 16px;
+    padding-right: 20px;
+}
+.history2-header .arrow{
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-left:1px solid #cbcbcb;
+    border-bottom:1px solid #cbcbcb;
+    left:-5px;
+    position: absolute;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    top:50%;
+    margin-top: -7px;
+    background-color:#f3f3f3;    
+}
+.footer{
+    background: url(http://srf.baidu.com/ios8/images/line1.png) top center no-repeat transparent;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+    color:#999898;
+    line-height: 48px;   
+}
+/**************************************/
+#item1{
+    position: relative;
+    overflow: hidden;
+}
+.banner-img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+   display:none; 
+}
+@-webkit-keyframes moveslow {
+  0% { padding-bottom:5px;}
+  100%{ padding-bottom:0px;}
+}
+@keyframes moveslow {
+  0% { padding-bottom:5px;}
+  100%{ padding-bottom:0px;}
+}
+.down-arrow{
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 42px;
+    bottom:5px;
+    left: 50%;
+    margin-left: -21px;
+    padding-bottom:5px;
+      -webkit-animation:moveslow 0.5s linear 0s infinite alternate;
+         -moz-animation:moveslow 0.5s linear 0s infinite alternate;
+           -o-animation:moveslow 0.5s linear 0s infinite alternate;
+              animation:moveslow 0.5s linear 0s infinite alternate;
+}
+.down-arrow img{
+    display: block;
+     
+}
+.submit-panel{
+    position: absolute;
+    width: 618px;
+}
+.b-t1{
+   text-align: center;
+   font-size: 50px;
+   line-height: 70px;
+   color:#ffffff; 
+}
+.b-t2{
+   text-align: center;
+   font-size: 21px;
+   line-height: 30px;
+   color:#ffffff;
+   padding-bottom: 30px; 
+}
+
+.b-t3{
+   text-align: center;
+   font-size: 18px;
+   line-height: 54px;
+   color:#ffffff;
+   padding-bottom: 30px; 
+}
+.b-t4{
+    margin: 0 auto;
+    width: 248px;
+    height: 54px;
+    border:2px solid #ffffff;
+    display: block;
+    font-size:24px;
+    line-height:54px;
+    text-align: center;
+    color:#ffffff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+.b-all{
+    position: absolute;
+    width: 100%;
+    bottom:45%;
+    left:0;
+    display: block;
+}
+.b-all a{
+    display: block;
+    width:314px;
+    margin: 0 auto;
+}
+.b-all a img{
+    display: block;
+    width:314px;
+}
+.b-input{
+    width:485px;
+    height: 30px;
+    line-height:30px;
+    padding: 9px 120px 9px 9px;
+    background-color: #ffffff;
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+    color:#7e7a7a;
+    margin: 0 auto; 
+}
+.b-error{
+    background:url(http://srf.baidu.com/ios8/images/error.png) 485px center no-repeat #ffffff;
+}
+.b-success{
+    background:url(http://srf.baidu.com/ios8/images/success.png) 505px center no-repeat #ffffff;
+}
+.top{
+    display: none;
+    position: fixed;
+    bottom:20px;
+    left: 50%;
+    margin-left: 520px;
+}
+/**********************************/
+.an-1-1,.an-1-2,.an-1-3,.an-1-4{
+    position: absolute;
+    display:block;
+    width: 203px;
+    left:79px;
+    top:300px;
+
+}
+
+.an-1-5{
+    position: absolute;
+    left:50px;
+    top:0;
+    display:block;
+}
+.an-1-1,.an-1-2,.an-1-3,.an-1-4{
+    -webkit-transition:all 0.5s cubic-bezier(.68,0,.83,1.4) 0s;
+    transition:all 0.5s cubic-bezier(.68,0,.83,1.4) 0s;    
+}
+.inview .an-1-1{
+    top:319px;
+    left: 216px;
+    width:186px;
+}
+.inview .an-1-2{
+    top:239px;
+    left: 25px;
+    width:270px;
+}
+.inview .an-1-3{
+    top:197px;
+    left: 317px;
+    width:160px;
+}
+.inview .an-1-4{
+    top:112px;
+    left: 130px;
+}
+/**********************************/
+.an-2-1{
+    position: absolute;
+    right:50px;
+    top:0;
+    display:block;
+}
+.an-2-2{
+    position: absolute;
+    right:16px;
+    top:280px;
+    display:block;
+}
+.an-2-3{
+    height: 40px;
+    padding: 0 10px;
+    width:371px;
+    background-color: #FFFFFF;
+    border:1px solid #d8d8d8;
+    -webkit-transition:all 1.5s steps(12,end) 0.5s;
+    transition:all 1.5s steps(12,end) 0.5s;
+    visibility: hidden;
+}
+.an-2-3-inner{
+    height: 40px;
+    width:12px;
+    overflow:hidden;
+    -webkit-transition:all 1.5s steps(12,end) 0.5s;
+    transition:all 1.5s steps(12,end) 0.5s;
+    visibility: hidden;
+}
+.an-2-4{
+    height: 64px;
+    padding: 0 10px;
+    width:12px;
+    overflow:hidden;
+    -webkit-transition:all 1.5s steps(12,end) 0.5s;
+    transition:all 1.5s steps(12,end) 0.5s;
+    visibility: hidden;
+}
+.an-2-3 span{
+    display: block;
+    float: left;
+    color: #0d465e;
+    line-height: 40px;
+    font-size: 27px;
+}
+.an-2-3 span.error{
+    background: url(http://srf.baidu.com/ios8/images/2-3.png) center bottom no-repeat transparent;
+}
+.an-2-4 span{
+    color:#0fa2ff;
+    font-size: 34px;
+    line-height: 64px;
+    display: block;
+    float: left;
+}
+.an-2-5{
+    position: absolute;
+    right:16px;
+    top:239px;
+    width:396px;    
+}
+.inview .an-2-3{
+    visibility: visible;
+}
+.inview .an-2-3-inner{
+    width: 270px;
+    visibility: visible;
+}
+.inview .an-2-4{
+    width: 220px;
+    visibility: visible;
+}
+/**********************************/
+.an-3-1{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 1s ease 1s;
+    transition:all 1s ease 1s;
+    top:50px;
+    left:100px;
+    -webkit-transform:rotate(0turn);
+    transform:rotate(0turn);
+    width: 50px;     
+}
+.an-3-2{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 1s ease 1s;
+    transition:all 1s ease 1s;
+    top:350px;
+    left:100px;
+    -webkit-transform:rotate(0turn);
+    transform:rotate(0turn);    
+}
+.an-3-3{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 1s cubic-bezier(.57,-0.51,0,1.42) 0.5s;
+    transition:all 1s cubic-bezier(.57,-0.51,0,1.42) 0.5s;
+    top:307px;
+    left:100px;
+     
+}
+.an-3-4{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 1s cubic-bezier(.57,-0.51,0,1.42) 0.5s;
+    transition:all 1s cubic-bezier(.57,-0.51,0,1.42) 0.5s;
+    top:352px;
+    left:100px;
+     
+}
+.an-3-5{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 1s ease 1s;
+    transition:all 1s ease 1s;
+    top:50px;
+    left:100px;
+    -webkit-transform:rotate(0turn);
+    transform:rotate(0turn);
+    width: 35px;     
+}
+.an-3-6{
+    position: absolute;
+    left:50px;
+    top:0;
+    display:block;    
+}
+.an-3-7{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 3s linear 0s;
+    transition:all 3s linear 0s;
+    top:310px;
+    left: 50px;  
+}
+.an-3-8{
+    position: absolute;
+    display:block;
+    -webkit-transition:all 3s linear 0s;
+    transition:all 3s linear 0s;
+    top:  105px;
+    left: 198px;  
+}
+.inview .an-3-1{
+   left: 330px;
+   top:95px;
+   -webkit-transform:rotate(-4turn);
+   transform:rotate(-4turn);
+   width: 100px;
+}
+.inview .an-3-2{
+   left: 370px;
+   top:200px;
+   -webkit-transform:rotate(2turn);
+   transform:rotate(2turn);
+}
+.inview .an-3-3{
+    top:307px;
+    left:310px;
+   width:106px;
+}
+.inview .an-3-4{
+    top:352px;
+    left:469px;
+   width:106px;
+}
+.inview .an-3-5{
+   left: 445px;
+   top:261px;
+   -webkit-transform:rotate(3turn);
+   transform:rotate(3turn);
+   width: 70px;
+}
+.inview .an-3-7{
+    left:230px;
+    
+}
+.inview .an-3-8{
+    left:22px;
+    
+}
+/**********************************/
+.an-4-1{
+    position: absolute;
+    right:50px;
+    top:0;
+    display:block;  
+}
+.an-4-2{
+    position: absolute;
+    right:90px;
+    top:263px;
+    display:block;  
+}
+.an-4-3{
+    position: absolute;
+    right:100px;
+    top:280px;
+    display:block;        
+}
+@-webkit-keyframes b1 {
+  0% { top:263px;}
+  20% { top:243px;}
+  50% { top:225px;}
+  70% { top:243px;}
+  100%{ top:263px;}
+}
+@keyframes b1 {
+  0% { top:263px;}
+  20% { top:243px;}
+  50% { top:225px;}
+  70% { top:243px;}
+  100%{ top:263px;}
+}
+.inview .an-4-2{
+      -webkit-animation:b1 5s linear 0s infinite alternate;
+         -moz-animation:b1 5s linear 0s infinite alternate;
+           -o-animation:b1 5s linear 0s infinite alternate;
+              animation:b1 5s linear 0s infinite alternate;
+}
+@-webkit-keyframes b2 {
+  0% { top:280px;}
+  50% { top:260px;}
+  100%{ top:280px;}
+}
+@keyframes b2 {
+  0% { top:280px;}
+  50% { top:260px;}
+  100%{ top:280px;}
+}
+.inview .an-4-3{
+      -webkit-animation:b2 5s linear 0s infinite alternate;
+         -moz-animation:b2 5s linear 0s infinite alternate;
+           -o-animation:b2 5s linear 0s infinite alternate;
+              animation:b2 5s linear 0s infinite alternate;
+}
+.an-4-t1{
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    color:#ec8d41;
+    
+    left: 80px;
+    top:200px;
+    padding-top: 60px;
+}
+.an-4-t2{
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    color:#ec4141;
+    left: 10px;
+        top:240px;
+    padding-top: 60px;
+}
+.an-4-t3{
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    color:#3879ef;
+    left: 130px;
+    top:275px;
+    padding-top: 60px;
+}
+.an-4-t4{
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    color:#38acef;
+    left: 50px;
+        top:320px;
+    padding-top: 60px;
+}
+@-webkit-keyframes show1 {
+  0% { opacity: 0;padding-top: 60px;}
+  20% { padding-top: 70px;}
+  50% { opacity: 1;padding-top: 70px;}
+  80% { opacity: 1;padding-top: 70px;}
+  90% { opacity: 0;padding-top: 10px;}
+  100%{ opacity: 0;padding-top: 10px;}
+}
+@keyframes show1 {
+  0% { opacity: 0;padding-top: 60px;}
+  20% { padding-top: 70px;}
+  50% { opacity: 1;padding-top: 70px;}
+  80% { opacity: 1;padding-top: 70px;}
+  90% { opacity: 0;padding-top: 10px;}
+  100%{ opacity: 0;padding-top: 10px;}
+}
+.inview .an-4-t1{
+      -webkit-animation:show1 4.7s linear 0s infinite normal;
+         -moz-animation:show1 4.7s linear 0s infinite normal;
+           -o-animation:show1 4.7s linear 0s infinite normal;
+              animation:show1 4.7s linear 0s infinite normal;
+}
+.inview .an-4-t2{
+      -webkit-animation:show1 4.8s linear 0s infinite normal;
+         -moz-animation:show1 4.8s linear 0s infinite normal;
+           -o-animation:show1 4.8s linear 0s infinite normal;
+              animation:show1 4.8s linear 0s infinite normal;
+}
+.inview .an-4-t3{
+      -webkit-animation:show1 4.8s linear 0s infinite normal;
+         -moz-animation:show1 4.8s linear 0s infinite normal;
+           -o-animation:show1 4.8s linear 0s infinite normal;
+              animation:show1 4.8s linear 0s infinite normal;
+}
+.inview .an-4-t4{
+      -webkit-animation:show1 4.7s linear 0s infinite normal;
+         -moz-animation:show1 4.7s linear 0s infinite normal;
+           -o-animation:show1 4.7s linear 0s infinite normal;
+              animation:show1 4.7s linear 0s infinite normal;
+}
+/**********************************/
+.an-5-1{
+    position: absolute;
+    left:50px;
+    top:0;
+    display:block;  
+}
+.an-5-2,.an-5-3,.an-5-4{
+    position: absolute;
+    left:90px;
+    top:287px;
+    display:block;
+    -webkit-transform:rotate(0turn);
+    transform:rotate(0turn); 
+
+}
+.an-5-2{
+    -webkit-transition:all 0.7s ease 0.5s;
+    transition:all 0.7s ease 0.5s;     
+}
+.an-5-3{
+    -webkit-transition:all 0.7s ease 0.6s;
+    transition:all 0.7s ease 0.6s;     
+}
+.an-5-4{
+    -webkit-transition:all 0.7s ease 0.7s;
+    transition:all 0.7s ease 0.7s;     
+}
+.inview .an-5-2{
+    left: 502px;
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn);
+}
+.inview .an-5-3{
+    left: 376px;
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn);    
+}
+.inview .an-5-4{
+    left: 250px;
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn);    
+}
+/**********************************/
+.an-6-1{
+    position: absolute;
+    right:50px;
+    top:0;
+    display:block;  
+}
+.an-6-panel{
+    height: 212px;
+    width: 376px;
+    overflow:hidden;
+    position: absolute;
+    right:70px;
+    top:250px;
+    -webkit-transition:all 2s linear 0s;
+    transition:all 2s linear 0s;
+}
+.an-6-2{
+    position: absolute;
+    right:174px;
+    top:212px;
+    display:block;
+    -webkit-transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.5s;
+    transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.5s; 
+    visibility: hidden;  
+}
+.an-6-3{
+    position: absolute;
+    right:0;
+    top:212px;
+    display:block;
+    -webkit-transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.7s;
+    transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.7s; 
+    visibility: hidden;  
+}
+.an-6-4{
+    position: absolute;
+    right:189px;
+    top:212px;
+    display:block;
+    -webkit-transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.9s;
+    transition:all 0.5s cubic-bezier(.77,.63,.18,1.23) 0.9s; 
+    visibility: hidden;  
+}
+.inview .an-6-panel{
+    top:150px;
+}
+.inview .an-6-2{
+    top:0px;
+    visibility: visible;
+}
+.inview .an-6-3{
+    top:30px;
+    visibility: visible;
+}
+.inview .an-6-4{
+    top:120px;
+    visibility: visible;
+}
+/*******************************************/
+.help-outer{
+    background:url(http://srf.baidu.com/ios8/images/help1.png) 0 0 repeat-x #ececec;
+}
+.help-panel{
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.help-nav{
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+.help-nav img{
+    float: left;
+    display: block;
+    height: 48px;
+    margin-left: 10px;
+}
+.help-return{
+    float: right;
+    line-height: 48px;
+    display: block;
+    font-size:20px;
+    color:#ffffff;
+}
+.help-t1{
+    width: 940px;
+    margin: 0 auto;
+    color: #49535f;
+    font-size:20px;
+    line-height: 60px;
+    border-bottom: 1px solid #b9b9b9;
+    margin-bottom: 30px;
+}
+.help-t2,.help-t3,.help-t4{
+    width: 245px;
+    float: left;
+    text-align: left;
+    font-size:16px;
+    line-height: 24px; 
+    
+}
+.help-t2 span,.help-t3 span,.help-t4 span{
+    color:#2681e4;
+}
+.help-t-center{
+    text-align: center;
+}
+.help-t2{
+    padding-left: 70px;
+}
+.help-t3{
+    padding-left: 60px;
+}
+.help-t4{
+    padding-left: 60px;
+}
+/*******************************************/
+@media (max-width: 940px){
+    .nav{
+        position:absolute;
+        width: 940px;
+    }
+    .nav .inner {
+        margin: 0 auto;
+        width: 940px;
+    }
+}
