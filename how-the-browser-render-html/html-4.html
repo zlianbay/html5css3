@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Bin</title>
+  <script>var start = +new Date;</script>
+  
+</head>
+  
+<body>
+<h2>对于动态创建的link标签不会阻塞其后动态创建的script的加载与执行，不管script标签是否具有async属性，但对于其他非动态创建的script，以上三条结论仍适用</h2>
+<h3>http://www.cnblogs.com/ganiks</h3>
+  test
+  <script> 
+    var link = document.createElement('link');
+    link.href = "http://udacity-crp.herokuapp.com/style.css?rtt=2";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+    var script = document.createElement('script');
+    script.src = "http://udacity-crp.herokuapp.com/time.js?rtt=1&a";
+    document.head.appendChild(script);
+  </script>
+  <div id="result"></div>
+  <script>var end = +new Date;document.getElementById("result").innerHTML = end-start;</script>
+  
+</body>
+</html>

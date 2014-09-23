@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Bin</title>
+  <script>var start = +new Date;</script>
+  <link href="http://udacity-crp.herokuapp.com/style.css?rtt=2" rel="stylesheet">
+  
+</head>
+  
+<body>
+  <h2>外部样式不会阻塞后续外部脚本的加载，但会阻塞外部脚本的执行。</h2>
+  <h3>http://www.cnblogs.com/ganiks</h3>
+  test
+  <script src="http://udacity-crp.herokuapp.com/time.js?rtt=1&a"></script>
+  <div id="result"></div>
+  <script>
+	var end = +new Date;
+	document.getElementById("result").innerHTML = end-start;
+  </script>
+</body>
+</html>
